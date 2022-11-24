@@ -1,0 +1,86 @@
+Microsoft Windows [Version 10.0.19044.2251]
+(c) Microsoft Corporation. Wszelkie prawa zastrzeżone.
+
+C:\Users\Wiluś>cd ..
+
+C:\Users>cd ..
+
+C:\>cd OPS/
+
+C:\OPS>git init
+Initialized empty Git repository in C:/OPS/.git/
+
+C:\OPS>git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+C:\OPS>git add C:\Users\Wiluś\Desktop\Robimybiblioteke.docx
+fatal: C:\Users\Wiluś\Desktop\Robimybiblioteke.docx: 'C:\Users\Wiluś\Desktop\Robimybiblioteke.docx' is outside repository at 'C:/OPS'
+
+C:\OPS>cp C:\Users\Wiluś\Desktop\Robimybiblioteke.docx ~
+'cp' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\OPS>copy C:\Users\Wiluś\Desktop\Robimybiblioteke.docx ~
+        1 file(s) copied.
+
+C:\OPS>copy C:\Users\Wiluś\Desktop\Robimybiblioteke.docx
+        1 file(s) copied.
+
+C:\OPS>git add .
+
+C:\OPS>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Robimybiblioteke.docx
+
+
+C:\OPS>git commit -m
+error: switch `m' requires a value
+
+C:\OPS>git commit -m "exercise1"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Wiluś@DESKTOP-RH2UPCS.(none)')
+
+C:\OPS>
+C:\OPS>git commit -m "exercise1"
+[master (root-commit) 26b88c5] exercise1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Robimybiblioteke.docx
+
+C:\OPS>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\OPS>git remote add origin https://github.com/ZiebaW/OPS.git
+
+C:\OPS>git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 10.17 KiB | 1.70 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ZiebaW/OPS.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\OPS>
